@@ -6,12 +6,18 @@ WaitFor.js
 The aim of the project is to create a simple and lightweight dependency manager that is used the same way regardless of how you organize your code files. You can setup your code with many (class) files or, you can compress it all into one and WaitFor.js will work without having to refactor any code.
 
 
-### Usage ###
-Download WaitFor.js file and place in your js directory. Then inlude it in you html file using the following code:
+### Installation ###
+Step 1. Download WaitFor.js file and place in your js directory. 
+
+Step 2. Inlude it in your html file using the following code:
 
 ```html
 <script src="js/WaitFor.js"></script>
 ```
+
+Step 3. Insert "WaitFor.these(classNames, initMethod)" at the beginning of your code and the "WaitFor.ready(className)" at the end.
+
+And your done.
 
 ### Example ###
 
@@ -19,6 +25,9 @@ This code creates a FruitBowl class that depends on an Apple and a Banana class 
 
 ```js
 $(document).ready(function(){
+
+  //Step 1 add the "WaitFor.these" method to have your 
+  //code initialize after it's dependencies have loaded
   WaitFor.these("Apple,Banana", function(){
     
     
@@ -36,8 +45,7 @@ $(document).ready(function(){
     
     //Then
     
-    //Call ready method to allow dependent code to initialize AFTER you have 
-    //fully declared class methods and properties
+    //Step 2 call the "WaitFor.ready" method at the end of your class declaration to initialize any dependant classes
     WaitFor.ready("FruitBowl");
     
   });
