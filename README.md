@@ -7,6 +7,7 @@ The aim of the project is to create a simple and lightweight dependency manager 
 
 
 ### Usage ###
+Download WaitFor.js file and place in your js directory. Then inlude it in you html file using the following code:
 
 ```html
 <script src="js/WaitFor.js"></script>
