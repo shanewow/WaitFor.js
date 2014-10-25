@@ -7,15 +7,16 @@ The aim of the project is to create a simple and lightweight dependency manager 
 
 
 ### Installation ###
-1. Download WaitFor.js file and place in your js directory. 
+Step 1. Download WaitFor.js file and place in your js directory. 
 
-2. Inlude it in your html file using the following code:
-
+Step 2. Inlude it in your html file using the following code:
 ```html
 <script src="js/WaitFor.js"></script>
 ```
 
-3. Insert `WaitFor.these(classNames, initMethod)` at the beginning of your code and the `WaitFor.ready(className)` at the end.
+Step 3. Insert `WaitFor.these(classNames, initMethod)` at the beginning of each dependant class.
+
+Step 4. Insert `WaitFor.ready(className)` at the end of each class that other classes depend on.
 
 And your done.
 
