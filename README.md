@@ -39,7 +39,7 @@ $(document).ready(function(){
     
     //Then
     
-    //Call ready class to allow dependent code to initialize AFTER you have 
+    //Call ready method to allow dependent code to initialize AFTER you have 
     //fully declared class methods and properties
     WaitFor.ready("FruitBowl");
     
@@ -69,7 +69,7 @@ $(document).ready(function(){
   
   //Then
   
-  //Call ready class to allow dependent code to initialize AFTER you have fully declared class methods and properties
+  //Call ready method to allow dependent code to initialize AFTER you have fully declared class methods and properties
   WaitFor.ready("Apple");
 });
 ```
