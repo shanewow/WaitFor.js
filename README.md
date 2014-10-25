@@ -17,30 +17,32 @@ The aim of the project is to create a simple dependency manager that works regar
 This code creates a FruitBowl class that depends on an Apple and a Banana object.
 
 ```js
-WaitFor.these("Apple,Banana", function(){
-  
-  
-  //FruitBowl constructor
-  var FruitBowl = function(){
-    this.apple = new Apple();
-    this.banana = new Banana();
-  };
-  
-  
-  //Declare other class methods, properties, etc. here
-  FruitBowl.prototype.fruityMethodA = function(){
-    //....
-  }
-  
-  FruitBowl.prototype.fruityMethodB = function(){
-    //....
-  }
-  
-  //Then
-  
-  //Call ready class to allow dependent code to initialize AFTER you have fully declared class methods and properties
-  WaitFor.ready("FruitBowl");
-  
+$(document).ready(function(){
+  WaitFor.these("Apple,Banana", function(){
+    
+    
+    //FruitBowl constructor
+    var FruitBowl = function(){
+      this.apple = new Apple();
+      this.banana = new Banana();
+    };
+    
+    
+    //Declare other class methods, properties, etc. here
+    FruitBowl.prototype.fruityMethodA = function(){
+      //....
+    }
+    
+    FruitBowl.prototype.fruityMethodB = function(){
+      //....
+    }
+    
+    //Then
+    
+    //Call ready class to allow dependent code to initialize AFTER you have fully declared class methods and properties
+    WaitFor.ready("FruitBowl");
+    
+  });
 });
 ```
 
@@ -49,6 +51,7 @@ WaitFor.these("Apple,Banana", function(){
 This code creates a Apple class that the FruitBowl is dependent on.
 
 ```js
+$(document).ready(function(){
   //Apple constructor
   var Apple = function(){
     this.seeds = 0;
@@ -67,4 +70,5 @@ This code creates a Apple class that the FruitBowl is dependent on.
   
   //Call ready class to allow dependent code to initialize AFTER you have fully declared class methods and properties
   WaitFor.ready("Apple");
+});
 ```
