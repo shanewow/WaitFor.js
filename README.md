@@ -15,13 +15,13 @@ Step 2. Inlude it in your html file using the following code:
 <script src="js/WaitFor.js"></script>
 ```
 
-Step 3. Insert "WaitFor.these(classNames, initMethod)" at the beginning of your code and the "WaitFor.ready(className)" at the end.
+Step 3. Insert `WaitFor.these(classNames, initMethod)` at the beginning of your code and the `WaitFor.ready(className)` at the end.
 
 And your done.
 
 ### Example ###
 
-This code creates a FruitBowl class that depends on an Apple and a Banana class to be instantiated in the DOM first. Notice the "WaitFor.these" call in the beginning and the "WaitFor.ready" call at the end. That's all you need.
+This code creates a FruitBowl class that depends on an Apple and a Banana class to be instantiated in the DOM first. Notice the `WaitFor.these` call in the beginning and the `WaitFor.ready` call at the end. That's all you need.
 
 ```js
 $(document).ready(function(){
@@ -52,7 +52,7 @@ $(document).ready(function(){
 });
 ```
 
-This code creates a Apple class that the FruitBowl is dependent on. The Apple class does not depend on other classes to exist so it only needs to call the "WaitFor.ready" method at the end to tell other dependant classes that it now exists and is available to use.
+This code creates a Apple class that the FruitBowl is dependent on. The Apple class does not depend on other classes to exist so it only needs to call the `WaitFor.ready` method at the end to tell other dependant classes that it now exists and is available to use.
 
 ```js
 $(document).ready(function(){
