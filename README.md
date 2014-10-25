@@ -29,14 +29,10 @@ $(document).ready(function(){
     };
     
     
-    //Declare other class methods, properties, etc. here
+    //Declare other class methods, properties, etc. here ex:
     FruitBowl.prototype.fruityMethodA = function(){
-      //....
-    }
-    
-    FruitBowl.prototype.fruityMethodB = function(){
-      //....
-    }
+      console.log("I like apples.");
+    };
     
     //Then
     
@@ -58,13 +54,11 @@ $(document).ready(function(){
   };
   
   //Declare other class methods, properties, etc. here
+  //Example:
   Apple.prototype.setSeeds = function(seeds){
     this.seeds = seeds;
   };
   
-  Apple.prototype.getSeeds = function(){
-    return this.seeds;
-  };
   
   //Then
   
