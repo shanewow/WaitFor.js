@@ -13,12 +13,9 @@ Step 2. Inlude it in your html file using the following code:
 ```html
 <script src="js/WaitFor.js"></script>
 ```
-
 Step 3. Insert `WaitFor.these(classNames, initMethod)` at the beginning of each dependant class.
 
 Step 4. Insert `WaitFor.ready(className)` at the end of each class that other classes depend on.
-
-And your done.
 
 ### Example ###
 
