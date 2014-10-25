@@ -14,7 +14,7 @@ The aim of the project is to create a simple and lightweight dependency manager 
 
 ### Example ###
 
-This code creates a FruitBowl class that depends on an Apple and a Banana object to be instantiated in the DOM first. Notice the "WaitFor.these" call in the beginning and the "WaitFor.ready" call at the end. That's all you need.
+This code creates a FruitBowl class that depends on an Apple and a Banana class to be instantiated in the DOM first. Notice the "WaitFor.these" call in the beginning and the "WaitFor.ready" call at the end. That's all you need.
 
 ```js
 $(document).ready(function(){
