@@ -47,7 +47,7 @@ $(document).ready(function(){
 });
 ```
 
-This code creates a Apple class that the FruitBowl is dependent on. Itself does not depend on other classes to exist so it only needs to call the "WaitFor.ready" method at the end to tell other classes that it now exists.
+This code creates a Apple class that the FruitBowl is dependent on. The Apple class does not depend on other classes to exist so it only needs to call the "WaitFor.ready" method at the end to tell other dependant classes that it now exists and is available to use.
 
 ```js
 $(document).ready(function(){
