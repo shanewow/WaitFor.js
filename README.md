@@ -3,7 +3,7 @@ WaitFor.js
 
 #### Purpose ####
 
-The aim of the project is to create a simple and lightweight dependency manager that does not restrict how you organize your code files. You can setup your code with many (class) files or, you can compress it all into one file and WaitFor.js will still work no matter how you organize your code.
+The aim of the project is to create a simple and lightweight dependency manager that is used the same way regardless of how you organize your code files. You can setup your code with many (class) files or, you can compress it all into one and WaitFor.js will work without having to refactor any code.
 
 
 ### Usage ###
