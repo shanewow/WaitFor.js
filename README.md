@@ -46,7 +46,7 @@ WaitFor.these("Apple,Banana", function(){
 
 ### Apple.js ###
 
-This code creates a Apple class that the FruitBowl is dependent on being initialized first.
+This code creates a Apple class that the FruitBowl is dependent on.
 
 ```js
   //Apple constructor
