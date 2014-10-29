@@ -4,8 +4,8 @@
  */
 var WaitFor = {};
 
-WaitFor.initMethodArrayMap = {};
-WaitFor.existsString = "";
+WaitFor.initMethodArrayMap 	= {};
+WaitFor.existsMap			= {};
 
 WaitFor.these = function(classNames, initMethod){
 	classNames = classNames.replace(new RegExp(" ","g"),"");
@@ -19,7 +19,7 @@ WaitFor.these = function(classNames, initMethod){
 
 WaitFor.ready = function(className){
 	if(WaitFor.debug)console.log("WaitFor.ready for "+className);
-	WaitFor.existsString = WaitFor.existsString.concat(className+",");
+	WaitFor.existsMap[className] = true;
 	for(var classNames in WaitFor.initMethodArrayMap){
 		if(WaitFor.exists(classNames)){
 			var initMethods = WaitFor.initMethodArrayMap[classNames];
@@ -36,7 +36,7 @@ WaitFor.ready = function(className){
 WaitFor.exists = function(classNames){
 	var names = classNames.split(",");
 	for(var i = 0; i < names.length; i++){
-		if(WaitFor.existsString.indexOf(names[i]+",") == -1){
+		if(WaitFor.existsMap[names[i]] != true){
 			return false;
 		}
 	}
